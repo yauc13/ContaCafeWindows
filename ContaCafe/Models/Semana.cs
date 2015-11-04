@@ -10,6 +10,7 @@ namespace ContaCafe.Models
     {
         public string IdSemana { get; set; }
         public string NombreSemana { get; set; }
+       
 
         public Semana()
         {

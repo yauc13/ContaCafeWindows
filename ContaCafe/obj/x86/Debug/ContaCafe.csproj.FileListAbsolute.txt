@@ -235,7 +235,6 @@ C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\System.Xml.ReaderWriter.dll
 C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\System.Xml.XDocument.dll
 C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\App.g.i.cs
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\App.g.cs
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\MainPage.g.i.cs
@@ -434,3 +433,15 @@ C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\Assets\Wide310x150Logo
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\ContaCafe.xr.xml
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\WinMetadata\Windows.winmd
 C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\resources.pri
+C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaSemanaPage.xbf
+C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\Parse.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\Parse.WinRT.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Parse.WinRT.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Parse.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaSemanaPage.g.i.cs
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaSemanaPage.g.cs
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaSemanaPage.xaml
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaSemanaPage.xbf
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\Parse.WinRT.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\Core\Parse.dll
+C:\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache
