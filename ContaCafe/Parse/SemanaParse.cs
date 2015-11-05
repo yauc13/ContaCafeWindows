@@ -34,6 +34,15 @@ namespace ContaCafe.Parse
             
         }
 
+        public async void updateSemana(Semana semana)
+        {
+            string idinsu = semana.IdSemana;
+            ParseQuery<ParseObject> query = ParseObject.GetQuery(CLASS);
+            ParseObject parseObject = await query.GetAsync(idinsu);
+            parseObject[C_NAME_SEM] = semana.NombreSemana;           
+            await parseObject.SaveAsync();
+        }
+
 
         public async Task<ObservableCollection<Semana>> getAllSemana()
         {

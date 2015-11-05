@@ -31,15 +31,36 @@ namespace ContaCafe
         {
             this.InitializeComponent();
             insumoParse = new InsumoParse();
+            insumo = new Insumo("kjYKMf0aP9", "somex",2222);
         }
 
 
         private void insertInsumo(object sender, RoutedEventArgs e)
         {
+
+            int nuevo = 0;
+            
             string nombreInsumo = txtNombreInsumo.Text;
             double precioInsumo = Convert.ToDouble(txtPrecioInsumo.Text);
-            insumo = new Insumo(nombreInsumo, precioInsumo);
-            insumoParse.insertInsumo(insumo);
+
+            if (nuevo==-1) { 
+            
+            Insumo insumonuevo = new Insumo(nombreInsumo, precioInsumo);
+            insumoParse.insertInsumo(insumonuevo);
+            
+            }
+            else
+            {
+                insumo.IdInsumo = insumo.IdInsumo;
+                insumo.NombreInsumo = nombreInsumo;
+                insumo.PrecioInsumo = precioInsumo;
+                insumoParse.updateInsumo(insumo);
+            }
+
         }
+
+
+
     }
+
 }

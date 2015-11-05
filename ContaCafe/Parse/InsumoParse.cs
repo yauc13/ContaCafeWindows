@@ -30,6 +30,18 @@ namespace ContaCafe.Parse
             await parseObject.SaveAsync();
         }
 
+        public async void updateInsumo(Insumo insumo)
+        {
+            string idinsu = insumo.IdInsumo;
+            ParseQuery<ParseObject> query = ParseObject.GetQuery(CLASS);
+            ParseObject parseObject = await query.GetAsync(idinsu);
+            parseObject[C_NAME_INS] = insumo.NombreInsumo;
+            parseObject[C_PRE_INS] = insumo.PrecioInsumo;
+            await parseObject.SaveAsync();
+        }
+
+
+
         private void parseInsumo(ParseObject parseObject, Insumo insumo)
         {
             parseObject[C_NAME_INS] = insumo.NombreInsumo;

@@ -23,5 +23,12 @@ namespace ContaCafe.Models
             this.PrecioInsumo = PrecioInsumo;
         }
 
+        public Insumo(string IdInsumo, string NombreInsumo, double PrecioInsumo)
+        {
+            this.NombreInsumo = NombreInsumo;
+            this.PrecioInsumo = PrecioInsumo;
+            this.IdInsumo = IdInsumo;
+        }
+
     }
 }
