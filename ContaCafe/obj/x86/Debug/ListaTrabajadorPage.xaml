@@ -10,11 +10,26 @@
     xmlns:par="using:ContaCafe.Parse"
     >
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Back" Label="Bck" />
+                <AppBarSeparator />
+                <AppBarButton Icon="Add" Label="AddTrabajador" />
+                <AppBarButton Icon="Edit" Label="EdtTrabajador" />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="Black">
         <ListBox x:ConnectionId='2'
             x:Name="listaTrabajador"
             Grid.Row="0"
                                                  
+            Background="Gray"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                            >
@@ -26,7 +41,8 @@
 
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                            <TextBlock x:ConnectionId='4' Style="{StaticResource TitleTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='4' Style="{StaticResource TitleTextBlockStyle}"
+                                       
                                                                        />
                             <TextBlock x:ConnectionId='5' Style="{StaticResource CaptionTextBlockStyle}" 
                                                                    />

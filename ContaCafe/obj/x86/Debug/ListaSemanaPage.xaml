@@ -10,11 +10,26 @@
     xmlns:par="using:ContaCafe.Parse"
     >
 
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Back" Label="Bck" />
+                <AppBarSeparator />
+                <AppBarButton Icon="Add" Label="AddSemana" />
+                <AppBarButton Icon="Edit" Label="EdtSemana" />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ListBox x:ConnectionId='2'
             x:Name="listaSemana"
             Grid.Row="0"
                                              
+            Background="#2b2b2b"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                        >
@@ -27,8 +42,10 @@
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
                             <TextBlock x:ConnectionId='4' Style="{StaticResource TitleTextBlockStyle}" 
+                                       Foreground="White"
                                                                    />
                             <TextBlock x:ConnectionId='5' Style="{StaticResource CaptionTextBlockStyle}" 
+                                       Foreground="White"
                                                                />
 
 

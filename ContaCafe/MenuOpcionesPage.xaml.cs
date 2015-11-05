@@ -22,9 +22,22 @@ namespace ContaCafe
     /// </summary>
     public sealed partial class MenuOpcionesPage : Page
     {
+
+        Frame rootFrame = Window.Current.Content as Frame;
         public MenuOpcionesPage()
         {
             this.InitializeComponent();
+        }
+
+        private void goToSemana(object sender, RoutedEventArgs e)
+        {
+            
+            rootFrame.Navigate(typeof(ListaSemanaPage));
+        }
+
+        private void goToInsumos(object sender, RoutedEventArgs e)
+        {
+            rootFrame.Navigate(typeof(ListaInsumoPage));
         }
     }
 }

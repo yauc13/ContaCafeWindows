@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-05T21:39:30.222</Modified>
+      <Modified>2015-11-05T22:37:28.083</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,15 +64,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\ContaCafe.exe">
       <PackagePath>ContaCafe.exe</PackagePath>
-      <Modified>2015-11-05T21:39:30.222</Modified>
+      <Modified>2015-11-05T22:37:28.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\ContaCafe.xr.xml">
       <PackagePath>ContaCafe.xr.xml</PackagePath>
-      <Modified>2015-11-05T17:40:37.082</Modified>
+      <Modified>2015-11-05T22:30:01.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\entrypoint\ContaCafe.exe">
       <PackagePath>entrypoint\ContaCafe.exe</PackagePath>
-      <Modified>2015-11-05T21:39:29.878</Modified>
+      <Modified>2015-11-05T22:37:27.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -112,7 +112,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-05T20:04:56.158</Modified>
+      <Modified>2015-11-05T22:37:02.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
