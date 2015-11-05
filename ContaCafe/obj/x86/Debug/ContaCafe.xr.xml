@@ -6,6 +6,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
+      <RootProperty Name="BottomAppBar" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -22,6 +23,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -54,6 +56,15 @@
     <RootType FullName="ContaCafe.AgregarInsumoPage" />
     <RootType FullName="ContaCafe.AgregarSemanaPage" />
     <RootType FullName="ContaCafe.AgregarTrabajadorPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="PrimaryCommands" />
+      <RootProperty Name="SecondaryCommands" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Label" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
@@ -69,5 +80,6 @@
     <RootType FullName="ContaCafe.ListaSemanaPage" />
     <RootType FullName="ContaCafe.ListaTrabajadorPage" />
     <RootType FullName="ContaCafe.MainPage" />
+    <RootType FullName="ContaCafe.MenuOpcionesPage" />
   </Roots.RootTypes>
 </Roots>

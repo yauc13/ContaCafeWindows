@@ -132,7 +132,7 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "ContaCafe.AgregarInsumoPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -155,8 +155,9 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             _typeNameTable[19] = "ContaCafe.Models.Trabajador";
             _typeNameTable[20] = "Int32";
             _typeNameTable[21] = "ContaCafe.MainPage";
+            _typeNameTable[22] = "ContaCafe.MenuOpcionesPage";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::ContaCafe.AgregarInsumoPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -179,6 +180,7 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             _typeTable[19] = typeof(global::ContaCafe.Models.Trabajador);
             _typeTable[20] = typeof(global::System.Int32);
             _typeTable[21] = typeof(global::ContaCafe.MainPage);
+            _typeTable[22] = typeof(global::ContaCafe.MenuOpcionesPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -229,6 +231,7 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
         private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Trabajador>(); }
         private object Activate_19_Trabajador() { return new global::ContaCafe.Models.Trabajador(); }
         private object Activate_21_MainPage() { return new global::ContaCafe.MainPage(); }
+        private object Activate_22_MenuOpcionesPage() { return new global::ContaCafe.MenuOpcionesPage(); }
         private void VectorAdd_6_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Insumo>)instance;
@@ -425,6 +428,13 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             case 21:   //  ContaCafe.MainPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_21_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  ContaCafe.MenuOpcionesPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_MenuOpcionesPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

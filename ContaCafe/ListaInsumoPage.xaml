@@ -9,9 +9,34 @@
     xmlns:mod="using:ContaCafe.Models"
     xmlns:par="using:ContaCafe.Parse"
     >
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Back" Label="Bck" />
+                <AppBarSeparator />
+                <AppBarButton Icon="Add" Label="AddInsumo" />
+                <AppBarButton Icon="Edit" Label="EdtInsumo" />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListBox
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+
+    <Grid Background="Black">
+        <Grid.Resources>
+            <Style TargetType="TextBlock" x:Key="TextStyle">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+        </Grid.Resources>
+        
+        <StackPanel Orientation="Vertical" Padding="10">
+            <TextBlock Text="Insumos" Style="{StaticResource HeaderTextBlockStyle}" Foreground="White"/>
+            <ListBox
             x:Name="listaInsumo"
             Grid.Row="0"
             ItemsSource="{x:Bind ListInsumo}"
@@ -38,5 +63,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        </StackPanel>
     </Grid>
 </Page>
