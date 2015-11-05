@@ -26,10 +26,8 @@ namespace ContaCafe
     /// </summary>
     public sealed partial class ListaSemanaPage : Page { 
         SemanaParse semanaParse;
-        //public ObservableCollection<Semana> ListSemana;
-        private ObservableCollection<Semana> listSemana;
-
         
+        private ObservableCollection<Semana> listSemana;
 
         public ObservableCollection<Semana> ListSemana
         {
@@ -58,15 +56,10 @@ namespace ContaCafe
 
         public async void mostrarListaSemana()
         {
-
-            ObservableCollection<Semana> PlanetaTask = await semanaParse.getAllSemana();
-            foreach (var p in PlanetaTask) {
+            ObservableCollection<Semana> SemanaTask = await semanaParse.getAllSemana();
+            foreach (var p in SemanaTask) {
                 listSemana.Add(p);
             }
-
-            
-
-           // string nom = ListSemana[0].NombreSemana;
         }
 
 

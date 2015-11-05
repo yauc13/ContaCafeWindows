@@ -99,17 +99,25 @@
     <Compile Include="AgregarSemanaPage.xaml.cs">
       <DependentUpon>AgregarSemanaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AgregarTrabajadorPage.xaml.cs">
+      <DependentUpon>AgregarTrabajadorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListaSemanaPage.xaml.cs">
       <DependentUpon>ListaSemanaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListaTrabajadorPage.xaml.cs">
+      <DependentUpon>ListaTrabajadorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Semana.cs" />
+    <Compile Include="Models\Trabajador.cs" />
     <Compile Include="Parse\SemanaParse.cs" />
+    <Compile Include="Parse\TrabajadorParse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,7 +145,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AgregarTrabajadorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListaSemanaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListaTrabajadorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

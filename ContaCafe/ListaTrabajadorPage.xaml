@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="ContaCafe.ListaTrabajadorPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContaCafe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:mod="using:ContaCafe.Models"
+    xmlns:par="using:ContaCafe.Parse"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListBox
+            x:Name="listaTrabajador"
+            Grid.Row="0"
+            ItemsSource="{x:Bind ListTrabajador}"
+            >
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="mod:Trabajador">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <StackPanel Grid.Column="1" Margin="10 0 0 0">
+                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" 
+                                       Text="{x:Bind NombreTrabajador}"/>
+                            <TextBlock Style="{StaticResource CaptionTextBlockStyle}" 
+                                       Text="{x:Bind IdTrabajador}"/>
+
+
+                        </StackPanel>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>

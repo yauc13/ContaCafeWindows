@@ -896,4 +896,14 @@ C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarSemanaPage.g.i.
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarSemanaPage.g.cs
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarSemanaPage.xaml
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarSemanaPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarTrabajadorPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarTrabajadorPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarTrabajadorPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarTrabajadorPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\AgregarTrabajadorPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaTrabajadorPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache

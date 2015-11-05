@@ -37,7 +37,8 @@ namespace ContaCafe
         private void insertSemana(object sender, RoutedEventArgs e)
         {
             string nombreSemana = txtNombreSemana.Text;
-            semana= new Semana(nombreSemana);
+            
+            semana = new Semana(nombreSemana);
             semanaParse.insertSemana(semana);
 
         }
