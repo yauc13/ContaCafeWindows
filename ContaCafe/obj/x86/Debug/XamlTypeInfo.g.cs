@@ -132,27 +132,29 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "ContaCafe.ListaSemanaPage";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "ContaCafe.AgregarSemanaPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>";
-            _typeNameTable[4] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>";
-            _typeNameTable[5] = "Object";
-            _typeNameTable[6] = "ContaCafe.Models.Semana";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "ContaCafe.MainPage";
+            _typeNameTable[3] = "ContaCafe.ListaSemanaPage";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "ContaCafe.Models.Semana";
+            _typeNameTable[8] = "String";
+            _typeNameTable[9] = "ContaCafe.MainPage";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::ContaCafe.ListaSemanaPage);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::ContaCafe.AgregarSemanaPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>);
-            _typeTable[4] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>);
-            _typeTable[5] = typeof(global::System.Object);
-            _typeTable[6] = typeof(global::ContaCafe.Models.Semana);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::ContaCafe.MainPage);
+            _typeTable[3] = typeof(global::ContaCafe.ListaSemanaPage);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::ContaCafe.Models.Semana);
+            _typeTable[8] = typeof(global::System.String);
+            _typeTable[9] = typeof(global::ContaCafe.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -187,18 +189,19 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ListaSemanaPage() { return new global::ContaCafe.ListaSemanaPage(); }
-        private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>(); }
-        private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>(); }
-        private object Activate_6_Semana() { return new global::ContaCafe.Models.Semana(); }
-        private object Activate_8_MainPage() { return new global::ContaCafe.MainPage(); }
-        private void VectorAdd_3_ObservableCollection(object instance, object item)
+        private object Activate_0_AgregarSemanaPage() { return new global::ContaCafe.AgregarSemanaPage(); }
+        private object Activate_3_ListaSemanaPage() { return new global::ContaCafe.ListaSemanaPage(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>(); }
+        private object Activate_7_Semana() { return new global::ContaCafe.Models.Semana(); }
+        private object Activate_9_MainPage() { return new global::ContaCafe.MainPage(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Semana>)instance;
             var newItem = (global::ContaCafe.Models.Semana)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_4_Collection(object instance, object item)
+        private void VectorAdd_5_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Semana>)instance;
             var newItem = (global::ContaCafe.Models.Semana)item;
@@ -215,10 +218,9 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ContaCafe.ListaSemanaPage
+            case 0:   //  ContaCafe.AgregarSemanaPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_ListaSemanaPage;
-                userType.AddMemberName("ListSemana");
+                userType.Activator = Activate_0_AgregarSemanaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -231,40 +233,48 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
                 xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>
+            case 3:   //  ContaCafe.ListaSemanaPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_ListaSemanaPage;
+                userType.AddMemberName("ListSemana");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>"));
-                userType.CollectionAdd = VectorAdd_3_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 4:   //  System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>
+            case 5:   //  System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_4_Collection;
-                userType.CollectionAdd = VectorAdd_4_Collection;
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
                 xamlType = userType;
                 break;
 
-            case 5:   //  Object
+            case 6:   //  Object
                 xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  ContaCafe.Models.Semana
+            case 7:   //  ContaCafe.Models.Semana
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_6_Semana;
+                userType.Activator = Activate_7_Semana;
                 userType.AddMemberName("IdSemana");
                 userType.AddMemberName("NombreSemana");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  String
+            case 8:   //  String
                 xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  ContaCafe.MainPage
+            case 9:   //  ContaCafe.MainPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

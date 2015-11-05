@@ -1,1 +1,1 @@
-C:\ContaCafeYeison\ContaCafe\ContaCafe\ContaCafe.csproj;x86
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\ContaCafe.csproj;x86

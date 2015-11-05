@@ -21,7 +21,7 @@ namespace ContaCafe.Parse
 
 
 
-        public async void insertPlaneta(Semana semana)
+        public async void insertSemana(Semana semana)
         {
             ParseObject parseObject = new ParseObject(CLASS);
             parseSemana(parseObject, semana);
