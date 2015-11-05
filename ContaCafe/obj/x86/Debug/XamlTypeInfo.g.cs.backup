@@ -132,15 +132,53 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "ContaCafe.MainPage";
+            _typeNameTable = new string[22];
+            _typeNameTable[0] = "ContaCafe.AgregarInsumoPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "ContaCafe.AgregarSemanaPage";
+            _typeNameTable[4] = "ContaCafe.AgregarTrabajadorPage";
+            _typeNameTable[5] = "ContaCafe.ListaInsumoPage";
+            _typeNameTable[6] = "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Insumo>";
+            _typeNameTable[7] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Insumo>";
+            _typeNameTable[8] = "Object";
+            _typeNameTable[9] = "ContaCafe.Models.Insumo";
+            _typeNameTable[10] = "String";
+            _typeNameTable[11] = "Double";
+            _typeNameTable[12] = "ContaCafe.ListaSemanaPage";
+            _typeNameTable[13] = "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>";
+            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>";
+            _typeNameTable[15] = "ContaCafe.Models.Semana";
+            _typeNameTable[16] = "ContaCafe.ListaTrabajadorPage";
+            _typeNameTable[17] = "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Trabajador>";
+            _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Trabajador>";
+            _typeNameTable[19] = "ContaCafe.Models.Trabajador";
+            _typeNameTable[20] = "Int32";
+            _typeNameTable[21] = "ContaCafe.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::ContaCafe.MainPage);
+            _typeTable = new global::System.Type[22];
+            _typeTable[0] = typeof(global::ContaCafe.AgregarInsumoPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::ContaCafe.AgregarSemanaPage);
+            _typeTable[4] = typeof(global::ContaCafe.AgregarTrabajadorPage);
+            _typeTable[5] = typeof(global::ContaCafe.ListaInsumoPage);
+            _typeTable[6] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Insumo>);
+            _typeTable[7] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Insumo>);
+            _typeTable[8] = typeof(global::System.Object);
+            _typeTable[9] = typeof(global::ContaCafe.Models.Insumo);
+            _typeTable[10] = typeof(global::System.String);
+            _typeTable[11] = typeof(global::System.Double);
+            _typeTable[12] = typeof(global::ContaCafe.ListaSemanaPage);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>);
+            _typeTable[15] = typeof(global::ContaCafe.Models.Semana);
+            _typeTable[16] = typeof(global::ContaCafe.ListaTrabajadorPage);
+            _typeTable[17] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Trabajador>);
+            _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Trabajador>);
+            _typeTable[19] = typeof(global::ContaCafe.Models.Trabajador);
+            _typeTable[20] = typeof(global::System.Int32);
+            _typeTable[21] = typeof(global::ContaCafe.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +213,58 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::ContaCafe.MainPage(); }
+        private object Activate_0_AgregarInsumoPage() { return new global::ContaCafe.AgregarInsumoPage(); }
+        private object Activate_3_AgregarSemanaPage() { return new global::ContaCafe.AgregarSemanaPage(); }
+        private object Activate_4_AgregarTrabajadorPage() { return new global::ContaCafe.AgregarTrabajadorPage(); }
+        private object Activate_5_ListaInsumoPage() { return new global::ContaCafe.ListaInsumoPage(); }
+        private object Activate_6_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Insumo>(); }
+        private object Activate_7_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Insumo>(); }
+        private object Activate_9_Insumo() { return new global::ContaCafe.Models.Insumo(); }
+        private object Activate_12_ListaSemanaPage() { return new global::ContaCafe.ListaSemanaPage(); }
+        private object Activate_13_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>(); }
+        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Semana>(); }
+        private object Activate_15_Semana() { return new global::ContaCafe.Models.Semana(); }
+        private object Activate_16_ListaTrabajadorPage() { return new global::ContaCafe.ListaTrabajadorPage(); }
+        private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Trabajador>(); }
+        private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Trabajador>(); }
+        private object Activate_19_Trabajador() { return new global::ContaCafe.Models.Trabajador(); }
+        private object Activate_21_MainPage() { return new global::ContaCafe.MainPage(); }
+        private void VectorAdd_6_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Insumo>)instance;
+            var newItem = (global::ContaCafe.Models.Insumo)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_7_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Insumo>)instance;
+            var newItem = (global::ContaCafe.Models.Insumo)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_13_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Semana>)instance;
+            var newItem = (global::ContaCafe.Models.Semana)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_14_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Semana>)instance;
+            var newItem = (global::ContaCafe.Models.Semana)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Trabajador>)instance;
+            var newItem = (global::ContaCafe.Models.Trabajador)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_18_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Trabajador>)instance;
+            var newItem = (global::ContaCafe.Models.Trabajador)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +276,9 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ContaCafe.MainPage
+            case 0:   //  ContaCafe.AgregarInsumoPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_AgregarInsumoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -201,16 +290,430 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  ContaCafe.AgregarSemanaPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_AgregarSemanaPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  ContaCafe.AgregarTrabajadorPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_AgregarTrabajadorPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  ContaCafe.ListaInsumoPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_ListaInsumoPage;
+                userType.AddMemberName("ListInsumo");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Insumo>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Insumo>"));
+                userType.CollectionAdd = VectorAdd_6_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Insumo>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_Collection;
+                userType.CollectionAdd = VectorAdd_7_Collection;
+                xamlType = userType;
+                break;
+
+            case 8:   //  Object
+                xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  ContaCafe.Models.Insumo
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_9_Insumo;
+                userType.AddMemberName("IdInsumo");
+                userType.AddMemberName("NombreInsumo");
+                userType.AddMemberName("PrecioInsumo");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  String
+                xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  Double
+                xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  ContaCafe.ListaSemanaPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_ListaSemanaPage;
+                userType.AddMemberName("ListSemana");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>"));
+                userType.CollectionAdd = VectorAdd_13_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 14:   //  System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Semana>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_14_Collection;
+                userType.CollectionAdd = VectorAdd_14_Collection;
+                xamlType = userType;
+                break;
+
+            case 15:   //  ContaCafe.Models.Semana
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_Semana;
+                userType.AddMemberName("IdSemana");
+                userType.AddMemberName("NombreSemana");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  ContaCafe.ListaTrabajadorPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_ListaTrabajadorPage;
+                userType.AddMemberName("ListTrabajador");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Trabajador>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Trabajador>"));
+                userType.CollectionAdd = VectorAdd_17_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Trabajador>
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_18_Collection;
+                userType.CollectionAdd = VectorAdd_18_Collection;
+                xamlType = userType;
+                break;
+
+            case 19:   //  ContaCafe.Models.Trabajador
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_19_Trabajador;
+                userType.AddMemberName("IdTrabajador");
+                userType.AddMemberName("NombreTrabajador");
+                userType.AddMemberName("Klu");
+                userType.AddMemberName("Kma");
+                userType.AddMemberName("Kmi");
+                userType.AddMemberName("Kju");
+                userType.AddMemberName("Kvi");
+                userType.AddMemberName("Ksa");
+                userType.AddMemberName("Kdo");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Int32
+                xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  ContaCafe.MainPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_21_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_ListaInsumoPage_ListInsumo(object instance)
+        {
+            var that = (global::ContaCafe.ListaInsumoPage)instance;
+            return that.ListInsumo;
+        }
+        private void set_0_ListaInsumoPage_ListInsumo(object instance, object Value)
+        {
+            var that = (global::ContaCafe.ListaInsumoPage)instance;
+            that.ListInsumo = (global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Insumo>)Value;
+        }
+        private object get_1_Insumo_IdInsumo(object instance)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            return that.IdInsumo;
+        }
+        private void set_1_Insumo_IdInsumo(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            that.IdInsumo = (global::System.String)Value;
+        }
+        private object get_2_Insumo_NombreInsumo(object instance)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            return that.NombreInsumo;
+        }
+        private void set_2_Insumo_NombreInsumo(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            that.NombreInsumo = (global::System.String)Value;
+        }
+        private object get_3_Insumo_PrecioInsumo(object instance)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            return that.PrecioInsumo;
+        }
+        private void set_3_Insumo_PrecioInsumo(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Insumo)instance;
+            that.PrecioInsumo = (global::System.Double)Value;
+        }
+        private object get_4_ListaSemanaPage_ListSemana(object instance)
+        {
+            var that = (global::ContaCafe.ListaSemanaPage)instance;
+            return that.ListSemana;
+        }
+        private void set_4_ListaSemanaPage_ListSemana(object instance, object Value)
+        {
+            var that = (global::ContaCafe.ListaSemanaPage)instance;
+            that.ListSemana = (global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Semana>)Value;
+        }
+        private object get_5_Semana_IdSemana(object instance)
+        {
+            var that = (global::ContaCafe.Models.Semana)instance;
+            return that.IdSemana;
+        }
+        private void set_5_Semana_IdSemana(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Semana)instance;
+            that.IdSemana = (global::System.String)Value;
+        }
+        private object get_6_Semana_NombreSemana(object instance)
+        {
+            var that = (global::ContaCafe.Models.Semana)instance;
+            return that.NombreSemana;
+        }
+        private void set_6_Semana_NombreSemana(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Semana)instance;
+            that.NombreSemana = (global::System.String)Value;
+        }
+        private object get_7_ListaTrabajadorPage_ListTrabajador(object instance)
+        {
+            var that = (global::ContaCafe.ListaTrabajadorPage)instance;
+            return that.ListTrabajador;
+        }
+        private void set_7_ListaTrabajadorPage_ListTrabajador(object instance, object Value)
+        {
+            var that = (global::ContaCafe.ListaTrabajadorPage)instance;
+            that.ListTrabajador = (global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Trabajador>)Value;
+        }
+        private object get_8_Trabajador_IdTrabajador(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.IdTrabajador;
+        }
+        private void set_8_Trabajador_IdTrabajador(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.IdTrabajador = (global::System.String)Value;
+        }
+        private object get_9_Trabajador_NombreTrabajador(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.NombreTrabajador;
+        }
+        private void set_9_Trabajador_NombreTrabajador(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.NombreTrabajador = (global::System.String)Value;
+        }
+        private object get_10_Trabajador_Klu(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Klu;
+        }
+        private void set_10_Trabajador_Klu(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Klu = (global::System.Int32)Value;
+        }
+        private object get_11_Trabajador_Kma(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Kma;
+        }
+        private void set_11_Trabajador_Kma(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Kma = (global::System.Int32)Value;
+        }
+        private object get_12_Trabajador_Kmi(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Kmi;
+        }
+        private void set_12_Trabajador_Kmi(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Kmi = (global::System.Int32)Value;
+        }
+        private object get_13_Trabajador_Kju(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Kju;
+        }
+        private void set_13_Trabajador_Kju(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Kju = (global::System.Int32)Value;
+        }
+        private object get_14_Trabajador_Kvi(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Kvi;
+        }
+        private void set_14_Trabajador_Kvi(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Kvi = (global::System.Int32)Value;
+        }
+        private object get_15_Trabajador_Ksa(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Ksa;
+        }
+        private void set_15_Trabajador_Ksa(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Ksa = (global::System.Int32)Value;
+        }
+        private object get_16_Trabajador_Kdo(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.Kdo;
+        }
+        private void set_16_Trabajador_Kdo(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.Kdo = (global::System.Int32)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "ContaCafe.ListaInsumoPage.ListInsumo":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.ListaInsumoPage");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "ListInsumo", "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Insumo>");
+                xamlMember.Getter = get_0_ListaInsumoPage_ListInsumo;
+                xamlMember.Setter = set_0_ListaInsumoPage_ListInsumo;
+                break;
+            case "ContaCafe.Models.Insumo.IdInsumo":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Insumo");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "IdInsumo", "String");
+                xamlMember.Getter = get_1_Insumo_IdInsumo;
+                xamlMember.Setter = set_1_Insumo_IdInsumo;
+                break;
+            case "ContaCafe.Models.Insumo.NombreInsumo":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Insumo");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "NombreInsumo", "String");
+                xamlMember.Getter = get_2_Insumo_NombreInsumo;
+                xamlMember.Setter = set_2_Insumo_NombreInsumo;
+                break;
+            case "ContaCafe.Models.Insumo.PrecioInsumo":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Insumo");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "PrecioInsumo", "Double");
+                xamlMember.Getter = get_3_Insumo_PrecioInsumo;
+                xamlMember.Setter = set_3_Insumo_PrecioInsumo;
+                break;
+            case "ContaCafe.ListaSemanaPage.ListSemana":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.ListaSemanaPage");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "ListSemana", "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Semana>");
+                xamlMember.Getter = get_4_ListaSemanaPage_ListSemana;
+                xamlMember.Setter = set_4_ListaSemanaPage_ListSemana;
+                break;
+            case "ContaCafe.Models.Semana.IdSemana":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Semana");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "IdSemana", "String");
+                xamlMember.Getter = get_5_Semana_IdSemana;
+                xamlMember.Setter = set_5_Semana_IdSemana;
+                break;
+            case "ContaCafe.Models.Semana.NombreSemana":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Semana");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "NombreSemana", "String");
+                xamlMember.Getter = get_6_Semana_NombreSemana;
+                xamlMember.Setter = set_6_Semana_NombreSemana;
+                break;
+            case "ContaCafe.ListaTrabajadorPage.ListTrabajador":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.ListaTrabajadorPage");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "ListTrabajador", "System.Collections.ObjectModel.ObservableCollection`1<ContaCafe.Models.Trabajador>");
+                xamlMember.Getter = get_7_ListaTrabajadorPage_ListTrabajador;
+                xamlMember.Setter = set_7_ListaTrabajadorPage_ListTrabajador;
+                break;
+            case "ContaCafe.Models.Trabajador.IdTrabajador":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "IdTrabajador", "String");
+                xamlMember.Getter = get_8_Trabajador_IdTrabajador;
+                xamlMember.Setter = set_8_Trabajador_IdTrabajador;
+                break;
+            case "ContaCafe.Models.Trabajador.NombreTrabajador":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "NombreTrabajador", "String");
+                xamlMember.Getter = get_9_Trabajador_NombreTrabajador;
+                xamlMember.Setter = set_9_Trabajador_NombreTrabajador;
+                break;
+            case "ContaCafe.Models.Trabajador.Klu":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Klu", "Int32");
+                xamlMember.Getter = get_10_Trabajador_Klu;
+                xamlMember.Setter = set_10_Trabajador_Klu;
+                break;
+            case "ContaCafe.Models.Trabajador.Kma":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kma", "Int32");
+                xamlMember.Getter = get_11_Trabajador_Kma;
+                xamlMember.Setter = set_11_Trabajador_Kma;
+                break;
+            case "ContaCafe.Models.Trabajador.Kmi":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kmi", "Int32");
+                xamlMember.Getter = get_12_Trabajador_Kmi;
+                xamlMember.Setter = set_12_Trabajador_Kmi;
+                break;
+            case "ContaCafe.Models.Trabajador.Kju":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kju", "Int32");
+                xamlMember.Getter = get_13_Trabajador_Kju;
+                xamlMember.Setter = set_13_Trabajador_Kju;
+                break;
+            case "ContaCafe.Models.Trabajador.Kvi":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kvi", "Int32");
+                xamlMember.Getter = get_14_Trabajador_Kvi;
+                xamlMember.Setter = set_14_Trabajador_Kvi;
+                break;
+            case "ContaCafe.Models.Trabajador.Ksa":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Ksa", "Int32");
+                xamlMember.Getter = get_15_Trabajador_Ksa;
+                xamlMember.Setter = set_15_Trabajador_Ksa;
+                break;
+            case "ContaCafe.Models.Trabajador.Kdo":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kdo", "Int32");
+                xamlMember.Getter = get_16_Trabajador_Kdo;
+                xamlMember.Setter = set_16_Trabajador_Kdo;
+                break;
+            }
             return xamlMember;
         }
     }

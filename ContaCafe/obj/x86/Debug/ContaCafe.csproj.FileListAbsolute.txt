@@ -907,3 +907,13 @@ C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.xb
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\AgregarTrabajadorPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaTrabajadorPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\AgregarInsumoPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaInsumoPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarInsumoPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarInsumoPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaInsumoPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaInsumoPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarInsumoPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaInsumoPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarInsumoPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaInsumoPage.xbf

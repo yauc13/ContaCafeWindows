@@ -96,6 +96,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarInsumoPage.xaml.cs">
+      <DependentUpon>AgregarInsumoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AgregarSemanaPage.xaml.cs">
       <DependentUpon>AgregarSemanaPage.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,9 @@
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListaInsumoPage.xaml.cs">
+      <DependentUpon>ListaInsumoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListaSemanaPage.xaml.cs">
       <DependentUpon>ListaSemanaPage.xaml</DependentUpon>
@@ -114,8 +120,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuOpcionesPage.xaml.cs">
+      <DependentUpon>MenuOpcionesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Insumo.cs" />
     <Compile Include="Models\Semana.cs" />
     <Compile Include="Models\Trabajador.cs" />
+    <Compile Include="Parse\InsumoParse.cs" />
     <Compile Include="Parse\SemanaParse.cs" />
     <Compile Include="Parse\TrabajadorParse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,11 +152,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AgregarInsumoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AgregarSemanaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AgregarTrabajadorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListaInsumoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,6 +179,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuOpcionesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
