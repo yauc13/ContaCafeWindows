@@ -15,8 +15,8 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton Icon="Back" Label="Bck" />
                 <AppBarSeparator />
-                <AppBarButton Icon="Add" Label="AddInsumo" />
-                <AppBarButton Icon="Edit" Label="EdtInsumo" />
+                <AppBarButton x:ConnectionId='2' Icon="Add" Label="AddInsumo"                   />
+                <AppBarButton x:ConnectionId='3' Icon="Edit" Label="EdtInsumo"                   />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
 
@@ -36,14 +36,14 @@
         
         <StackPanel Orientation="Vertical" Padding="10">
             <TextBlock Text="Insumos" Style="{StaticResource HeaderTextBlockStyle}" Foreground="White"/>
-            <ListBox x:ConnectionId='2'
+            <ListBox x:ConnectionId='4'
             x:Name="listaInsumo"
             Grid.Row="0"
-                                             
+                                                                             
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                        >
-                    <Grid x:ConnectionId='3'>
+                    <Grid x:ConnectionId='5'>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="10"/>
                             <ColumnDefinition Width="*"/>
@@ -51,9 +51,9 @@
 
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                            <TextBlock x:ConnectionId='4' Style="{StaticResource TitleTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='6' Style="{StaticResource TitleTextBlockStyle}" 
                                                                    />
-                            <TextBlock x:ConnectionId='5' Style="{StaticResource CaptionTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='7' Style="{StaticResource CaptionTextBlockStyle}" 
                                                                />
 
 

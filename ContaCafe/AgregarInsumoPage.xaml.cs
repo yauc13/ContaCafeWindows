@@ -34,6 +34,13 @@ namespace ContaCafe
             insumo = new Insumo("kjYKMf0aP9", "somex",2222);
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Insumo item = e.Parameter as Insumo;
+            txtNombreInsumo.Text = item.NombreInsumo;
+            txtPrecioInsumo.Text = item.PrecioInsumo.ToString();
+
+        }
 
         private void insertInsumo(object sender, RoutedEventArgs e)
         {

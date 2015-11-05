@@ -15,8 +15,8 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton Icon="Back" Label="Bck" />
                 <AppBarSeparator />
-                <AppBarButton Icon="Add" Label="AddInsumo" />
-                <AppBarButton Icon="Edit" Label="EdtInsumo" />
+                <AppBarButton Icon="Add" Label="AddInsumo" Click="addInsumo" />
+                <AppBarButton Icon="Edit" Label="EdtInsumo" Click="edtInsumo" />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
 
@@ -39,7 +39,7 @@
             <ListBox
             x:Name="listaInsumo"
             Grid.Row="0"
-            ItemsSource="{x:Bind ListInsumo}"
+            ItemsSource="{x:Bind ListInsumo}" SelectionChanged="selectInsumo"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="mod:Insumo">

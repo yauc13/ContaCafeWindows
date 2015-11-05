@@ -25,7 +25,10 @@ namespace ContaCafe
     /// </summary>
     public sealed partial class ListaInsumoPage : Page
     {
+
+        Frame rootFrame = Window.Current.Content as Frame;
         InsumoParse insumoParse;
+        int ok;
 
         private ObservableCollection<Insumo> listInsumo;
 
@@ -60,7 +63,32 @@ namespace ContaCafe
             }
         }
 
+       
 
+        private void edtInsumo(object sender, RoutedEventArgs e)
+        {
+            ok = 1;
+        }
 
+        private void selectInsumo(object sender, SelectionChangedEventArgs e)
+        {
+           
+            if (ok == 1)
+            {
+                ok = 0;
+                rootFrame.Navigate(typeof(AgregarInsumoPage), ListInsumo.ElementAt(listaInsumo.SelectedIndex));
+
+                //listaInsumo.SelectedIndex = -1;
+            }
+            else
+            {
+                rootFrame.Navigate(typeof(ListaInsumoPage), listaInsumo);
+            }
+        }
+
+        private void addInsumo(object sender, RoutedEventArgs e)
+        {
+            rootFrame.Navigate(typeof(AgregarInsumoPage));
+        }
     }
 }
