@@ -15,8 +15,8 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton Icon="Back" Label="Bck" />
                 <AppBarSeparator />
-                <AppBarButton Icon="Add" Label="AddSemana" />
-                <AppBarButton Icon="Edit" Label="EdtSemana" />
+                <AppBarButton x:ConnectionId='2' Icon="Add" Label="AddSemana"                   />
+                <AppBarButton x:ConnectionId='3' Icon="Edit" Label="EdtSemana"                    />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
 
@@ -25,15 +25,15 @@
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListBox x:ConnectionId='2'
+        <ListBox x:ConnectionId='4'
             x:Name="listaSemana"
             Grid.Row="0"
                                              
-            Background="#2b2b2b"
+            Background="#2b2b2b"                                
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                        >
-                    <Grid x:ConnectionId='3'>
+                    <Grid x:ConnectionId='5'>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="10"/>
                             <ColumnDefinition Width="*"/>
@@ -41,10 +41,10 @@
 
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                            <TextBlock x:ConnectionId='4' Style="{StaticResource TitleTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='6' Style="{StaticResource TitleTextBlockStyle}" 
                                        Foreground="White"
                                                                    />
-                            <TextBlock x:ConnectionId='5' Style="{StaticResource CaptionTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='7' Style="{StaticResource CaptionTextBlockStyle}" 
                                        Foreground="White"
                                                                />
 

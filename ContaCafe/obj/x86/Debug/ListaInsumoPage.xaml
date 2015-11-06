@@ -40,6 +40,7 @@
             x:Name="listaInsumo"
             Grid.Row="0"
                                                                              
+            Background="#2b2b2b"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                        >
@@ -52,9 +53,13 @@
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
                             <TextBlock x:ConnectionId='6' Style="{StaticResource TitleTextBlockStyle}" 
-                                                                   />
+                                                                   
+                                       Foreground="White"
+                                       />
                             <TextBlock x:ConnectionId='7' Style="{StaticResource CaptionTextBlockStyle}" 
-                                                               />
+                                                               
+                                       Foreground="White"
+                                       />
 
 
                         </StackPanel>

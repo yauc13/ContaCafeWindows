@@ -40,6 +40,7 @@
             x:Name="listaInsumo"
             Grid.Row="0"
             ItemsSource="{x:Bind ListInsumo}" SelectionChanged="selectInsumo"
+            Background="#2b2b2b"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="mod:Insumo">
@@ -52,9 +53,13 @@
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
                             <TextBlock Style="{StaticResource TitleTextBlockStyle}" 
-                                       Text="{x:Bind NombreInsumo}"/>
+                                       Text="{x:Bind NombreInsumo}"
+                                       Foreground="White"
+                                       />
                             <TextBlock Style="{StaticResource CaptionTextBlockStyle}" 
-                                       Text="{x:Bind IdInsumo}"/>
+                                       Text="{x:Bind IdInsumo}"
+                                       Foreground="White"
+                                       />
 
 
                         </StackPanel>

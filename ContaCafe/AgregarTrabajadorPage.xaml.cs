@@ -26,11 +26,35 @@ namespace ContaCafe
     {
         TrabajadorParse trabajadorParse;
         Trabajador trabajador;
+        bool nuevo = false;
+        Frame rootFrame = Window.Current.Content as Frame;
 
         public AgregarTrabajadorPage()
         {
             this.InitializeComponent();
             trabajadorParse = new TrabajadorParse();
+        }
+
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            trabajador = e.Parameter as Trabajador;
+            if (trabajador != null)
+            {
+                nuevo = true;
+                txtNombreTrabajador.Text = trabajador.NombreTrabajador;
+                txtKlu.Text = trabajador.Klu.ToString();
+                txtKma.Text = trabajador.Kma.ToString();
+                txtKmi.Text = trabajador.Kmi.ToString();
+                txtKju.Text = trabajador.Kju.ToString();
+                txtKvi.Text = trabajador.Kvi.ToString();
+                txtKsa.Text = trabajador.Ksa.ToString();
+                txtKdo.Text = trabajador.Kdo.ToString();
+            }
+            else
+            {
+                nuevo = false;
+            }
         }
 
         private void insertTrabajador(object sender, RoutedEventArgs e)
@@ -44,8 +68,24 @@ namespace ContaCafe
             int ksa = Convert.ToInt16(txtKsa.Text);
             int kdo = Convert.ToInt16(txtKdo.Text);
 
-            trabajador = new Trabajador(nombreTrabajador, klu, kma, kmi, kju, kvi, ksa, kdo);
-            trabajadorParse.insertTrabajador(trabajador);
+            
+
+            if (nuevo == false)
+            {
+                Trabajador trabajadornuevo = new Trabajador(nombreTrabajador, klu, kma, kmi, kju, kvi, ksa, kdo);
+                trabajadorParse.insertTrabajador(trabajadornuevo);
+            }
+            else
+            {
+                trabajador.IdTrabajador = trabajador.IdTrabajador;
+                trabajador.NombreTrabajador = nombreTrabajador;
+
+                trabajadorParse.updateTrabajador(trabajador);
+                nuevo = false;
+            }
+            rootFrame.Navigate(typeof(ListaTrabajadorPage));
+
+
         }
     }
 }

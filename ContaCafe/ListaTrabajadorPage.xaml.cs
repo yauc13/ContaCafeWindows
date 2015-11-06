@@ -27,6 +27,8 @@ namespace ContaCafe
     {
 
         TrabajadorParse trabajadorParse;
+        Frame rootFrame = Window.Current.Content as Frame;
+        int ok;
 
         private ObservableCollection<Trabajador> listTrabajador;
 
@@ -64,6 +66,29 @@ namespace ContaCafe
             }
         }
 
+        private void selectTrabajador(object sender, SelectionChangedEventArgs e)
+        {
+            if (ok == 1)
+            {
+                ok = 0;
+                rootFrame.Navigate(typeof(AgregarTrabajadorPage), listTrabajador.ElementAt(listaTrabajador.SelectedIndex));
 
+                //listaInsumo.SelectedIndex es el nombre del Lisbox del xaml;
+            }
+            else
+            {
+                rootFrame.Navigate(typeof(ListaTrabajadorPage), listTrabajador);
+            }
+        }
+
+        private void editTrabajador(object sender, RoutedEventArgs e)
+        {
+            ok = 1;
+        }
+
+        private void addTrabajador(object sender, RoutedEventArgs e)
+        {
+            rootFrame.Navigate(typeof(AgregarTrabajadorPage));
+        }
     }
 }

@@ -15,8 +15,8 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton Icon="Back" Label="Bck" />
                 <AppBarSeparator />
-                <AppBarButton Icon="Add" Label="AddSemana" />
-                <AppBarButton Icon="Edit" Label="EdtSemana" />
+                <AppBarButton Icon="Add" Label="AddSemana" Click="addSemana" />
+                <AppBarButton Icon="Edit" Label="EdtSemana" Click="editSemana" />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
 
@@ -29,7 +29,7 @@
             x:Name="listaSemana"
             Grid.Row="0"
             ItemsSource="{x:Bind ListSemana}"
-            Background="#2b2b2b"
+            Background="#2b2b2b" SelectionChanged="selectSemana"
             >
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="mod:Semana">

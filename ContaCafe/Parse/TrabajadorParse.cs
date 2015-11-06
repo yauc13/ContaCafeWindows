@@ -47,7 +47,7 @@ namespace ContaCafe.Parse
             parseObject[C_KDOM] = trabajador.Kdo;
         }
 
-        public async void updateInsumo(Trabajador trabajador)
+        public async void updateTrabajador(Trabajador trabajador)
         {
             string idinsu = trabajador.IdTrabajador;
             ParseQuery<ParseObject> query = ParseObject.GetQuery(CLASS);

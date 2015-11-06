@@ -26,7 +26,9 @@ namespace ContaCafe
     /// </summary>
     public sealed partial class ListaSemanaPage : Page { 
         SemanaParse semanaParse;
-        
+        Frame rootFrame = Window.Current.Content as Frame;
+        int ok;
+
         private ObservableCollection<Semana> listSemana;
 
         public ObservableCollection<Semana> ListSemana
@@ -62,6 +64,29 @@ namespace ContaCafe
             }
         }
 
+        private void selectSemana(object sender, SelectionChangedEventArgs e)
+        {
+            if (ok == 1)
+            {
+                ok = 0;
+                rootFrame.Navigate(typeof(AgregarSemanaPage), listSemana.ElementAt(listaSemana.SelectedIndex));
 
+                //listaInsumo.SelectedIndex es el nombre del Lisbox del xaml;
+            }
+            else
+            {
+                rootFrame.Navigate(typeof(ListaSemanaPage), listSemana);
+            }
+        }
+
+        private void editSemana(object sender, RoutedEventArgs e)
+        {
+            ok = 1;
+        }
+
+        private void addSemana(object sender, RoutedEventArgs e)
+        {
+            rootFrame.Navigate(typeof(AgregarSemanaPage));
+        }
     }
 }

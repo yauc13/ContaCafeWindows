@@ -26,6 +26,8 @@ namespace ContaCafe
     {
         SemanaParse semanaParse;
         Semana semana;
+        bool nuevo = false;
+        Frame rootFrame = Window.Current.Content as Frame;
 
         public AgregarSemanaPage()
         {
@@ -34,13 +36,43 @@ namespace ContaCafe
             //semana = new Semana();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            semana = e.Parameter as Semana;
+            if (semana != null)
+            {
+                nuevo = true;
+                txtNombreSemana.Text = semana.NombreSemana;
+                
+            }
+            else
+            {
+                nuevo = false;
+            }
+        }
+
+
         private void insertSemana(object sender, RoutedEventArgs e)
         {
             string nombreSemana = txtNombreSemana.Text;
-            
-            semana = new Semana(nombreSemana);
-            semanaParse.insertSemana(semana);
+
+            if (nuevo == false)
+            {
+                Semana semananuevo = new Semana(nombreSemana);
+                semanaParse.insertSemana(semananuevo);
+            }
+            else
+            {
+                semana.IdSemana = semana.IdSemana;
+                semana.NombreSemana = nombreSemana;
+
+                semanaParse.updateSemana(semana);
+                nuevo = false;
+            }
+            rootFrame.Navigate(typeof(ListaSemanaPage));
 
         }
+
+
     }
 }

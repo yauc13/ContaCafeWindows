@@ -37,8 +37,7 @@ namespace ContaCafe
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            
+        {        
             insumo = e.Parameter as Insumo;
             if (insumo!=null)
             {
@@ -50,9 +49,6 @@ namespace ContaCafe
             {
                 nuevo = false;
             }
-
-            
-
         }
 
         private void insertInsumo(object sender, RoutedEventArgs e)
@@ -60,11 +56,9 @@ namespace ContaCafe
             string nombreInsumo = txtNombreInsumo.Text;
             double precioInsumo = Convert.ToDouble(txtPrecioInsumo.Text);
 
-            if (nuevo==false) { 
-            
+            if (nuevo==false) {            
             Insumo insumonuevo = new Insumo(nombreInsumo, precioInsumo);
-            insumoParse.insertInsumo(insumonuevo);
-            
+            insumoParse.insertInsumo(insumonuevo);           
             }
             else
             {
@@ -74,9 +68,7 @@ namespace ContaCafe
                 insumoParse.updateInsumo(insumo);
                 nuevo = false;
             }
-
             rootFrame.Navigate(typeof(ListaInsumoPage));
-
         }
 
 
