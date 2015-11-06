@@ -45,6 +45,7 @@ namespace ContaCafe.Parse
             parseObject[C_KVI] = trabajador.Kvi;
             parseObject[C_KSA] = trabajador.Ksa;
             parseObject[C_KDOM] = trabajador.Kdo;
+            parseObject[C_IDSEMANA] = trabajador.IdSemana;
         }
 
         public async void updateTrabajador(Trabajador trabajador)
@@ -64,10 +65,10 @@ namespace ContaCafe.Parse
         }
 
 
-        public async Task<ObservableCollection<Trabajador>> getAllTrabajador()
+        public async Task<ObservableCollection<Trabajador>> getAllTrabajador(string idSemanaNoti)
         {
             ObservableCollection<Trabajador> listTrabajador = new ObservableCollection<Trabajador>();
-            ParseQuery<ParseObject> query = ParseObject.GetQuery(CLASS);
+            ParseQuery<ParseObject> query = ParseObject.GetQuery(CLASS).WhereEqualTo(C_IDSEMANA, idSemanaNoti);
             IEnumerable<ParseObject> results = await query.FindAsync();
 
             ParseObject listObject;

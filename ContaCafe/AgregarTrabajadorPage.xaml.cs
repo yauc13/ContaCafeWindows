@@ -28,6 +28,7 @@ namespace ContaCafe
         Trabajador trabajador;
         bool nuevo = false;
         Frame rootFrame = Window.Current.Content as Frame;
+        string idTraNov;
 
         public AgregarTrabajadorPage()
         {
@@ -38,6 +39,7 @@ namespace ContaCafe
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            idTraNov = e.Parameter as string;
             trabajador = e.Parameter as Trabajador;
             if (trabajador != null)
             {
@@ -72,7 +74,7 @@ namespace ContaCafe
 
             if (nuevo == false)
             {
-                Trabajador trabajadornuevo = new Trabajador(nombreTrabajador, klu, kma, kmi, kju, kvi, ksa, kdo);
+                Trabajador trabajadornuevo = new Trabajador(nombreTrabajador, klu, kma, kmi, kju, kvi, ksa, kdo, idTraNov);
                 trabajadorParse.insertTrabajador(trabajadornuevo);
             }
             else
@@ -83,7 +85,7 @@ namespace ContaCafe
                 trabajadorParse.updateTrabajador(trabajador);
                 nuevo = false;
             }
-            rootFrame.Navigate(typeof(ListaTrabajadorPage));
+            rootFrame.Navigate(typeof(ListaTrabajadorPage), idTraNov);
 
 
         }

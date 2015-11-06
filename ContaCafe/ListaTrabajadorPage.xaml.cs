@@ -29,6 +29,10 @@ namespace ContaCafe
         TrabajadorParse trabajadorParse;
         Frame rootFrame = Window.Current.Content as Frame;
         int ok;
+        Semana semana;
+        string idSemanaNoti;
+        string idTraNov;
+
 
         private ObservableCollection<Trabajador> listTrabajador;
 
@@ -42,11 +46,7 @@ namespace ContaCafe
             }
             set
             {
-
                 listTrabajador = value;
-
-
-
             }
         }
 
@@ -54,12 +54,41 @@ namespace ContaCafe
         {
             this.InitializeComponent();
             trabajadorParse = new TrabajadorParse();
-            mostrarListaTrabajador();
+            //mostrarListaTrabajador();
         }
+
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            idTraNov = e.Parameter as string;
+            semana = e.Parameter as Semana;
+            if (semana != null)
+            {
+                idSemanaNoti = semana.IdSemana;
+                mostrarListaTrabajador();
+
+            }
+            else
+            {
+              
+            }
+
+            if (idTraNov != null)
+            {
+                idSemanaNoti = idTraNov;
+                mostrarListaTrabajador();
+
+            }
+            else
+            {
+
+            }
+        }
+
 
         public async void mostrarListaTrabajador()
         {
-            ObservableCollection<Trabajador> TrabajadorTask = await trabajadorParse.getAllTrabajador();
+            ObservableCollection<Trabajador> TrabajadorTask = await trabajadorParse.getAllTrabajador(idSemanaNoti);
             foreach (var p in TrabajadorTask)
             {
                 listTrabajador.Add(p);
@@ -77,7 +106,7 @@ namespace ContaCafe
             }
             else
             {
-                rootFrame.Navigate(typeof(ListaTrabajadorPage), listTrabajador);
+                //rootFrame.Navigate(typeof(ListaTrabajadorPage), listTrabajador);
             }
         }
 
@@ -88,7 +117,7 @@ namespace ContaCafe
 
         private void addTrabajador(object sender, RoutedEventArgs e)
         {
-            rootFrame.Navigate(typeof(AgregarTrabajadorPage));
+            rootFrame.Navigate(typeof(AgregarTrabajadorPage), idSemanaNoti);
         }
     }
 }

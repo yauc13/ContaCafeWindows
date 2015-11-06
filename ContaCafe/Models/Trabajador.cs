@@ -18,6 +18,7 @@ namespace ContaCafe.Models
         public int Kvi { get; set; }
         public int Ksa { get; set; }
         public int Kdo { get; set; }
+        public string IdSemana { get; set; }
 
 
         public Trabajador()
@@ -25,7 +26,7 @@ namespace ContaCafe.Models
 
         }
 
-        public Trabajador(string NombreTrabajador, int Klu, int Kma, int Kmi, int Kju, int Kvi, int Ksa, int Kdo)
+        public Trabajador(string NombreTrabajador, int Klu, int Kma, int Kmi, int Kju, int Kvi, int Ksa, int Kdo, string IdSemana)
         {
             this.NombreTrabajador = NombreTrabajador;
             this.Klu = Klu;
@@ -35,6 +36,7 @@ namespace ContaCafe.Models
             this.Kvi = Kvi;
             this.Ksa = Ksa;
             this.Kdo = Kdo;
+            this.IdSemana = IdSemana;
 
         }
 

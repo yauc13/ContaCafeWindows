@@ -417,6 +417,7 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
                 userType.AddMemberName("Kvi");
                 userType.AddMemberName("Ksa");
                 userType.AddMemberName("Kdo");
+                userType.AddMemberName("IdSemana");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -613,6 +614,16 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             var that = (global::ContaCafe.Models.Trabajador)instance;
             that.Kdo = (global::System.Int32)Value;
         }
+        private object get_17_Trabajador_IdSemana(object instance)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            return that.IdSemana;
+        }
+        private void set_17_Trabajador_IdSemana(object instance, object Value)
+        {
+            var that = (global::ContaCafe.Models.Trabajador)instance;
+            that.IdSemana = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -722,6 +733,12 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
                 xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "Kdo", "Int32");
                 xamlMember.Getter = get_16_Trabajador_Kdo;
                 xamlMember.Setter = set_16_Trabajador_Kdo;
+                break;
+            case "ContaCafe.Models.Trabajador.IdSemana":
+                userType = (global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContaCafe.Models.Trabajador");
+                xamlMember = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlMember(this, "IdSemana", "String");
+                xamlMember.Getter = get_17_Trabajador_IdSemana;
+                xamlMember.Setter = set_17_Trabajador_IdSemana;
                 break;
             }
             return xamlMember;

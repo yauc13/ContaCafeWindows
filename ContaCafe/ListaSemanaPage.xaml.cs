@@ -75,9 +75,10 @@ namespace ContaCafe
             }
             else
             {
-                rootFrame.Navigate(typeof(ListaSemanaPage), listSemana);
+                rootFrame.Navigate(typeof(ListaTrabajadorPage), listSemana.ElementAt(listaSemana.SelectedIndex));
             }
         }
+
 
         private void editSemana(object sender, RoutedEventArgs e)
         {

@@ -25,6 +25,8 @@
     </Page.BottomAppBar>
 
     <Grid Background="Black">
+        <StackPanel Orientation="Vertical" Padding="10">
+        <TextBlock Text="Trabajadores" Style="{StaticResource HeaderTextBlockStyle}" Foreground="White"/>
         <ListBox x:ConnectionId='4'
             x:Name="listaTrabajador"
             Grid.Row="0"
@@ -55,6 +57,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        </StackPanel>
     </Grid>
 </Page>
 

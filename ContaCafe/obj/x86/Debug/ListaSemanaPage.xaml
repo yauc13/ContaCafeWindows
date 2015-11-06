@@ -24,8 +24,10 @@
         </CommandBar>
     </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListBox x:ConnectionId='4'
+    <Grid Background="Black">
+        <StackPanel Orientation="Vertical" Padding="10">
+            <TextBlock Text="Semanas" Style="{StaticResource HeaderTextBlockStyle}" Foreground="White"/>
+            <ListBox x:ConnectionId='4'
             x:Name="listaSemana"
             Grid.Row="0"
                                              
@@ -55,6 +57,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        </StackPanel>
     </Grid>
 </Page>
 
