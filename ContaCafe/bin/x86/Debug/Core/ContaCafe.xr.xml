@@ -42,6 +42,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -65,12 +66,12 @@
       <RootProperty Name="PrimaryCommands" />
       <RootProperty Name="SecondaryCommands" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Background" />

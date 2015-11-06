@@ -13,7 +13,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.PrimaryCommands>
-                <AppBarButton Icon="Back" Label="Bck" />
+              
                 <AppBarSeparator />
                 <AppBarButton Icon="Add" Label="AddTrabajador" Click="addTrabajador" />
                 <AppBarButton Icon="Edit" Label="EdtTrabajador" Click="editTrabajador" />

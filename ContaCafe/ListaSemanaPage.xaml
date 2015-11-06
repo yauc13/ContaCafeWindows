@@ -13,7 +13,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.PrimaryCommands>
-                <AppBarButton Icon="Back" Label="Bck" />
+                
                 <AppBarSeparator />
                 <AppBarButton Icon="Add" Label="AddSemana" Click="addSemana" />
                 <AppBarButton Icon="Edit" Label="EdtSemana" Click="editSemana" />

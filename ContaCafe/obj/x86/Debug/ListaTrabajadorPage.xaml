@@ -13,7 +13,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.PrimaryCommands>
-                <AppBarButton Icon="Back" Label="Bck" />
+              
                 <AppBarSeparator />
                 <AppBarButton x:ConnectionId='2' Icon="Add" Label="AddTrabajador"                       />
                 <AppBarButton x:ConnectionId='3' Icon="Edit" Label="EdtTrabajador"                        />
@@ -36,22 +36,132 @@
             <ListBox.ItemTemplate>
                 <DataTemplate                            >
                     <Grid x:ConnectionId='5'>
+                        
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="10"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
 
-
-                        <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                            <TextBlock x:ConnectionId='6' Style="{StaticResource TitleTextBlockStyle}"
+                       
+                            <TextBlock x:ConnectionId='6' 
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Grid.ColumnSpan="3"
+                                Style="{StaticResource TitleTextBlockStyle}"
                                        Foreground="White"
                                                                        />
-                            <TextBlock x:ConnectionId='7' Style="{StaticResource CaptionTextBlockStyle}"
+                               
+                                    <TextBlock 
+                                         Grid.Column="0"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
                                        Foreground="White"
-                                                                   />
-
-
-                        </StackPanel>
+                                               Margin="0,0,5,0"
+                                       Text="Lu"/>
+                                    <TextBlock 
+                                         Grid.Column="1"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Ma"/>
+                                    <TextBlock 
+                                         Grid.Column="2"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Mi"/>
+                                    <TextBlock 
+                                         Grid.Column="3"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Ju"/>
+                                    <TextBlock 
+                                         Grid.Column="4"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Vi"/>
+                                    <TextBlock 
+                                         Grid.Column="5"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Sa"/>
+                                    <TextBlock 
+                                         Grid.Column="6"
+                                         Grid.Row="1"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                       Text="Do"/>
+                         
+                                    <TextBlock x:ConnectionId='7'
+                                         Grid.Column="0"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                               Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='8'
+                                        Grid.Column="1"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='9' 
+                                        Grid.Column="2"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='10' 
+                                        Grid.Column="3"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='11' 
+                                        Grid.Column="4"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='12' 
+                                        Grid.Column="5"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                                    <TextBlock x:ConnectionId='13' 
+                                        Grid.Column="6"
+                                         Grid.Row="2"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                       Foreground="White"
+                                                Margin="0,0,5,0"
+                                                          />
+                        
+                         
 
                     </Grid>
                 </DataTemplate>

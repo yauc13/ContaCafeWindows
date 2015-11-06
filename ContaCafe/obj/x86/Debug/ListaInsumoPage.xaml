@@ -13,7 +13,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.PrimaryCommands>
-                <AppBarButton Icon="Back" Label="Bck" />
+
                 <AppBarSeparator />
                 <AppBarButton x:ConnectionId='2' Icon="Add" Label="AddInsumo"                   />
                 <AppBarButton x:ConnectionId='3' Icon="Edit" Label="EdtInsumo"                   />
@@ -44,7 +44,7 @@
             >
             <ListBox.ItemTemplate>
                 <DataTemplate                        >
-                    <Grid x:ConnectionId='5'>
+                    <Grid x:ConnectionId='6'>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="10"/>
                             <ColumnDefinition Width="*"/>
@@ -52,12 +52,12 @@
 
 
                         <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                            <TextBlock x:ConnectionId='6' Style="{StaticResource TitleTextBlockStyle}" 
+                            <TextBlock x:ConnectionId='7' Style="{StaticResource TitleTextBlockStyle}" 
                                                                    
                                        Foreground="White"
                                        />
-                            <TextBlock x:ConnectionId='7' Style="{StaticResource CaptionTextBlockStyle}" 
-                                                               
+                            <TextBlock x:ConnectionId='8' Style="{StaticResource CaptionTextBlockStyle}" 
+                                                                   
                                        Foreground="White"
                                        />
 
@@ -68,6 +68,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="Suma Total: "  Foreground="White"/>
+                <TextBlock x:ConnectionId='5' x:Name="txtSuma"  Text="Resultado" Foreground="White" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
