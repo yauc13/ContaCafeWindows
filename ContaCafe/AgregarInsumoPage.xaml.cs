@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -33,9 +34,17 @@ namespace ContaCafe
         {
             this.InitializeComponent();
             insumoParse = new InsumoParse();
-            
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += AgregarInsumoPage_BackRequested;
         }
-
+        private void AgregarInsumoPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (e.Handled == false)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {        
             insumo = e.Parameter as Insumo;

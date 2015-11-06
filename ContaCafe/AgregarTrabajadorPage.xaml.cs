@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -34,12 +35,23 @@ namespace ContaCafe
         {
             this.InitializeComponent();
             trabajadorParse = new TrabajadorParse();
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += AgregarTrabajadorPage_BackRequested;
+
         }
 
+        private void AgregarTrabajadorPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (e.Handled == false)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+        }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            idTraNov = e.Parameter as string;
+           
             trabajador = e.Parameter as Trabajador;
             if (trabajador != null)
             {
@@ -56,6 +68,7 @@ namespace ContaCafe
             else
             {
                 nuevo = false;
+                idTraNov = e.Parameter as string;
             }
         }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -34,6 +35,17 @@ namespace ContaCafe
             this.InitializeComponent();
             semanaParse = new SemanaParse();
             //semana = new Semana();
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += AgregarSemanaPage_BackRequested;
+        }
+
+        private void AgregarSemanaPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (e.Handled == false)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

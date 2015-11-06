@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -55,12 +56,23 @@ namespace ContaCafe
             this.InitializeComponent();
             trabajadorParse = new TrabajadorParse();
             //mostrarListaTrabajador();
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ListaTrabajadorPage_BackRequested;
+
         }
 
+        private void ListaTrabajadorPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (e.Handled == false)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+        }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            idTraNov = e.Parameter as string;
+            
             semana = e.Parameter as Semana;
             if (semana != null)
             {
@@ -70,13 +82,15 @@ namespace ContaCafe
             }
             else
             {
-              
+                //mostrarListaTrabajador();
             }
 
+            idTraNov = e.Parameter as string;
             if (idTraNov != null)
             {
+                
                 idSemanaNoti = idTraNov;
-                mostrarListaTrabajador();
+               mostrarListaTrabajador();
 
             }
             else
