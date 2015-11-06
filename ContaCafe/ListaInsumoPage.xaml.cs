@@ -30,7 +30,7 @@ namespace ContaCafe
         Frame rootFrame = Window.Current.Content as Frame;
         InsumoParse insumoParse;
         int ok;
-
+        int contador;
         private ObservableCollection<Insumo> listInsumo;
 
         public ObservableCollection<Insumo> ListInsumo
@@ -73,10 +73,19 @@ namespace ContaCafe
             foreach (var p in InsumoTask)
             {
                 listInsumo.Add(p);
+
             }
+            contador = 0;
+            for (int i = 0; i < listInsumo.LongCount(); i++)
+            {
+                int num = Convert.ToInt16(listInsumo[i].PrecioInsumo);
+                contador += num;
+            }
+            txtSuma.Text = "" + contador;
+
         }
 
-       
+
 
         private void edtInsumo(object sender, RoutedEventArgs e)
         {

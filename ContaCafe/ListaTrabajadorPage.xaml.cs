@@ -105,6 +105,7 @@ namespace ContaCafe
             ObservableCollection<Trabajador> TrabajadorTask = await trabajadorParse.getAllTrabajador(idSemanaNoti);
             foreach (var p in TrabajadorTask)
             {
+               
                 listTrabajador.Add(p);
             }
         }

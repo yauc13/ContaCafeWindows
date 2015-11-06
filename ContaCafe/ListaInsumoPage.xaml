@@ -57,7 +57,7 @@
                                        Foreground="White"
                                        />
                             <TextBlock Style="{StaticResource CaptionTextBlockStyle}" 
-                                       Text="{x:Bind IdInsumo}"
+                                       Text="{x:Bind PrecioInsumo}"
                                        Foreground="White"
                                        />
 
@@ -68,6 +68,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="Suma Total: "  Foreground="White"/>
+                <TextBlock x:Name="txtSuma"  Text="Resultado" Foreground="White" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
