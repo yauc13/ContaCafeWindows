@@ -26,31 +26,41 @@ namespace ContaCafe
     {
         InsumoParse insumoParse;
         Insumo insumo;
+        bool nuevo= false;
+        Frame rootFrame = Window.Current.Content as Frame;
 
         public AgregarInsumoPage()
         {
             this.InitializeComponent();
             insumoParse = new InsumoParse();
-            insumo = new Insumo("kjYKMf0aP9", "somex",2222);
+            
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Insumo item = e.Parameter as Insumo;
-            txtNombreInsumo.Text = item.NombreInsumo;
-            txtPrecioInsumo.Text = item.PrecioInsumo.ToString();
+            
+            insumo = e.Parameter as Insumo;
+            if (insumo!=null)
+            {
+                nuevo = true;
+                txtNombreInsumo.Text = insumo.NombreInsumo;
+                txtPrecioInsumo.Text = insumo.PrecioInsumo.ToString();
+            }
+            else
+            {
+                nuevo = false;
+            }
+
+            
 
         }
 
         private void insertInsumo(object sender, RoutedEventArgs e)
         {
-
-            int nuevo = 0;
-            
             string nombreInsumo = txtNombreInsumo.Text;
             double precioInsumo = Convert.ToDouble(txtPrecioInsumo.Text);
 
-            if (nuevo==-1) { 
+            if (nuevo==false) { 
             
             Insumo insumonuevo = new Insumo(nombreInsumo, precioInsumo);
             insumoParse.insertInsumo(insumonuevo);
@@ -62,7 +72,10 @@ namespace ContaCafe
                 insumo.NombreInsumo = nombreInsumo;
                 insumo.PrecioInsumo = precioInsumo;
                 insumoParse.updateInsumo(insumo);
+                nuevo = false;
             }
+
+            rootFrame.Navigate(typeof(ListaInsumoPage));
 
         }
 
