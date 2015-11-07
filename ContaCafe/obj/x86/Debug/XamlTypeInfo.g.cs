@@ -132,7 +132,7 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "ContaCafe.AgregarInsumoPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -154,10 +154,12 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<ContaCafe.Models.Trabajador>";
             _typeNameTable[19] = "ContaCafe.Models.Trabajador";
             _typeNameTable[20] = "Int32";
-            _typeNameTable[21] = "ContaCafe.MainPage";
-            _typeNameTable[22] = "ContaCafe.MenuOpcionesPage";
+            _typeNameTable[21] = "ContaCafe.LoginPage";
+            _typeNameTable[22] = "ContaCafe.MainPage";
+            _typeNameTable[23] = "ContaCafe.MenuOpcionesPage";
+            _typeNameTable[24] = "ContaCafe.RegistroPage";
 
-            _typeTable = new global::System.Type[23];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::ContaCafe.AgregarInsumoPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -179,8 +181,10 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
             _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Trabajador>);
             _typeTable[19] = typeof(global::ContaCafe.Models.Trabajador);
             _typeTable[20] = typeof(global::System.Int32);
-            _typeTable[21] = typeof(global::ContaCafe.MainPage);
-            _typeTable[22] = typeof(global::ContaCafe.MenuOpcionesPage);
+            _typeTable[21] = typeof(global::ContaCafe.LoginPage);
+            _typeTable[22] = typeof(global::ContaCafe.MainPage);
+            _typeTable[23] = typeof(global::ContaCafe.MenuOpcionesPage);
+            _typeTable[24] = typeof(global::ContaCafe.RegistroPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -230,8 +234,10 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
         private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ContaCafe.Models.Trabajador>(); }
         private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ContaCafe.Models.Trabajador>(); }
         private object Activate_19_Trabajador() { return new global::ContaCafe.Models.Trabajador(); }
-        private object Activate_21_MainPage() { return new global::ContaCafe.MainPage(); }
-        private object Activate_22_MenuOpcionesPage() { return new global::ContaCafe.MenuOpcionesPage(); }
+        private object Activate_21_LoginPage() { return new global::ContaCafe.LoginPage(); }
+        private object Activate_22_MainPage() { return new global::ContaCafe.MainPage(); }
+        private object Activate_23_MenuOpcionesPage() { return new global::ContaCafe.MenuOpcionesPage(); }
+        private object Activate_24_RegistroPage() { return new global::ContaCafe.RegistroPage(); }
         private void VectorAdd_6_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ContaCafe.Models.Insumo>)instance;
@@ -426,16 +432,30 @@ namespace ContaCafe.ContaCafe_XamlTypeInfo
                 xamlType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  ContaCafe.MainPage
+            case 21:   //  ContaCafe.LoginPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_MainPage;
+                userType.Activator = Activate_21_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  ContaCafe.MenuOpcionesPage
+            case 22:   //  ContaCafe.MainPage
                 userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_MenuOpcionesPage;
+                userType.Activator = Activate_22_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  ContaCafe.MenuOpcionesPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_23_MenuOpcionesPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  ContaCafe.RegistroPage
+                userType = new global::ContaCafe.ContaCafe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_24_RegistroPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -24,12 +24,12 @@
             </Style>
         </Grid.Resources>
         <StackPanel Orientation="Vertical" Padding="10">
-            <TextBlock Text="Agregar Insumo" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <TextBlock Text=" Insumo" Style="{StaticResource HeaderTextBlockStyle}"/>
             <TextBlock Text="Insumo" Style="{StaticResource TextStyle}"/>
             <TextBox x:Name="txtNombreInsumo" InputScope="Text" PlaceholderText="Ej: AbonoApc"/>
             <TextBlock Text="Precio" Style="{StaticResource TextStyle}"/>
             <TextBox x:Name="txtPrecioInsumo" InputScope="Number" PlaceholderText="Ej: 3500"/>
-            <Button x:Name="btn_AddInsumo" Content="Agregar"  Style="{StaticResource ButtonBStyle}" Click="insertInsumo"  />
+            <Button x:Name="btn_AddInsumo" Content="Aceptar"  Style="{StaticResource ButtonBStyle}" Click="insertInsumo"  />
         </StackPanel>
     </Grid>
 </Page>

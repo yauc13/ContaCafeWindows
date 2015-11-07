@@ -77,7 +77,10 @@ namespace ContaCafe
                 insumoParse.updateInsumo(insumo);
                 nuevo = false;
             }
-            rootFrame.Navigate(typeof(ListaInsumoPage));
+
+          //  Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //rootFrame.Navigate(typeof(ListaInsumoPage));
         }
 
 

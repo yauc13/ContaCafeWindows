@@ -16,6 +16,7 @@
 
                 <AppBarSeparator />
                 <AppBarButton x:ConnectionId='2' Icon="Add" Label="AddInsumo"                   />
+              
                 <AppBarButton x:ConnectionId='3' Icon="Edit" Label="EdtInsumo"                   />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>

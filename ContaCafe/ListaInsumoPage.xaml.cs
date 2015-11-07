@@ -78,7 +78,7 @@ namespace ContaCafe
             contador = 0;
             for (int i = 0; i < listInsumo.LongCount(); i++)
             {
-                int num = Convert.ToInt16(listInsumo[i].PrecioInsumo);
+                int num = Convert.ToInt32(listInsumo[i].PrecioInsumo);
                 contador += num;
             }
             txtSuma.Text = "" + contador;
@@ -89,7 +89,15 @@ namespace ContaCafe
 
         private void edtInsumo(object sender, RoutedEventArgs e)
         {
-            ok = 1;
+            // ok = 1;
+            int lis;
+            lis = listaInsumo.SelectedIndex;
+            if (lis > -1 )
+            {
+
+                rootFrame.Navigate(typeof(AgregarInsumoPage), ListInsumo.ElementAt(listaInsumo.SelectedIndex));
+            }
+            
         }
 
         private void selectInsumo(object sender, SelectionChangedEventArgs e)
@@ -97,14 +105,14 @@ namespace ContaCafe
            
             if (ok == 1)
             {
-                ok = 0;
-                rootFrame.Navigate(typeof(AgregarInsumoPage), ListInsumo.ElementAt(listaInsumo.SelectedIndex));
+             //   ok = 0;
+             //   rootFrame.Navigate(typeof(AgregarInsumoPage), ListInsumo.ElementAt(listaInsumo.SelectedIndex));
 
                 //listaInsumo.SelectedIndex = -1;
             }
             else
             {
-                rootFrame.Navigate(typeof(ListaInsumoPage), listaInsumo);
+               // rootFrame.Navigate(typeof(ListaInsumoPage), listaInsumo);
             }
         }
 

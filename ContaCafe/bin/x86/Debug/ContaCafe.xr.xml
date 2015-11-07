@@ -53,10 +53,13 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="InputScope" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="ContaCafe.AgregarInsumoPage" />
@@ -89,7 +92,13 @@
     <RootType FullName="ContaCafe.ListaSemanaPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition" />
     <RootType FullName="ContaCafe.ListaTrabajadorPage" />
+    <RootType FullName="ContaCafe.LoginPage" />
     <RootType FullName="ContaCafe.MainPage" />
     <RootType FullName="ContaCafe.MenuOpcionesPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="ContaCafe.RegistroPage" />
   </Roots.RootTypes>
 </Roots>

@@ -906,7 +906,6 @@ C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarTrabajadorPage.
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ListaTrabajadorPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\AgregarTrabajadorPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaTrabajadorPage.xbf
-C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\AgregarInsumoPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\ListaInsumoPage.xbf
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\AgregarInsumoPage.g.i.cs
@@ -922,3 +921,14 @@ C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\MenuOpcionesPage.g.i.c
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\MenuOpcionesPage.g.cs
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\MenuOpcionesPage.xaml
 C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\MenuOpcionesPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\LoginPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\bin\x86\Debug\RegistroPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\LoginPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\LoginPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\RegistroPage.g.i.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\RegistroPage.g.cs
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\LoginPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\RegistroPage.xaml
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\LoginPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\RegistroPage.xbf
+C:\Veer\ContaCafeYeison\ContaCafe\ContaCafe\obj\x86\Debug\ContaCafe.csprojResolveAssemblyReference.cache

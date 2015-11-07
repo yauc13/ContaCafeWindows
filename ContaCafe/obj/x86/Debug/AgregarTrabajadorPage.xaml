@@ -41,7 +41,7 @@
             <TextBox x:ConnectionId='7' x:Name="txtKsa" InputScope="Number" PlaceholderText="Ej: 150"/>
             <TextBlock Text="No Kilos Domingo" Style="{StaticResource TextStyle}"/>
             <TextBox x:ConnectionId='8' x:Name="txtKdo" InputScope="Number" PlaceholderText="Ej: 155"/>
-            <Button x:ConnectionId='9' x:Name="btn_AddTrabajador" Content="Agregar"  Style="{StaticResource ButtonBStyle}"                           />
+            <Button x:ConnectionId='9' x:Name="btn_AddTrabajador" Content="Aceptar"  Style="{StaticResource ButtonBStyle}"                           />
         </StackPanel>
     </Grid>
 </Page>

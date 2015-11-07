@@ -81,8 +81,8 @@ namespace ContaCafe
                 semanaParse.updateSemana(semana);
                 nuevo = false;
             }
-            rootFrame.Navigate(typeof(ListaSemanaPage));
-
+            //    rootFrame.Navigate(typeof(ListaSemanaPage));
+            rootFrame.GoBack();
         }
 
 

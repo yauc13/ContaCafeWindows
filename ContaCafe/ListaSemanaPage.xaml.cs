@@ -89,6 +89,7 @@ namespace ContaCafe
             else
             {
                 rootFrame.Navigate(typeof(ListaTrabajadorPage), listSemana.ElementAt(listaSemana.SelectedIndex));
+                
             }
         }
 
@@ -96,6 +97,7 @@ namespace ContaCafe
         private void editSemana(object sender, RoutedEventArgs e)
         {
             ok = 1;
+           
         }
 
         private void addSemana(object sender, RoutedEventArgs e)

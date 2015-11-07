@@ -41,7 +41,7 @@
             <TextBox x:Name="txtKsa" InputScope="Number" PlaceholderText="Ej: 150"/>
             <TextBlock Text="No Kilos Domingo" Style="{StaticResource TextStyle}"/>
             <TextBox x:Name="txtKdo" InputScope="Number" PlaceholderText="Ej: 155"/>
-            <Button x:Name="btn_AddTrabajador" Content="Agregar"  Style="{StaticResource ButtonBStyle}" Click="insertTrabajador"  />
+            <Button x:Name="btn_AddTrabajador" Content="Aceptar"  Style="{StaticResource ButtonBStyle}" Click="insertTrabajador"  />
         </StackPanel>
     </Grid>
 </Page>

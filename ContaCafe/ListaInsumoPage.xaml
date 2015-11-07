@@ -16,6 +16,7 @@
 
                 <AppBarSeparator />
                 <AppBarButton Icon="Add" Label="AddInsumo" Click="addInsumo" />
+              
                 <AppBarButton Icon="Edit" Label="EdtInsumo" Click="edtInsumo" />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>

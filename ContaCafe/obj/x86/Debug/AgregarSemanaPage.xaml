@@ -27,7 +27,7 @@
             <TextBlock Text="Agregar Semana" Style="{StaticResource HeaderTextBlockStyle}"/>
             <TextBlock Text="Semana" Style="{StaticResource TextStyle}"/>
             <TextBox x:ConnectionId='1' x:Name="txtNombreSemana" InputScope="Text" PlaceholderText="Ej: Semana 01"/>
-            <Button x:ConnectionId='2' x:Name="btn_AddSemana" Content="Agregar"  Style="{StaticResource ButtonBStyle}"                       />
+            <Button x:ConnectionId='2' x:Name="btn_AddSemana" Content="Aceptar"  Style="{StaticResource ButtonBStyle}"                       />
         </StackPanel>
     </Grid>
 </Page>

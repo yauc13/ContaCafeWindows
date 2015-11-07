@@ -98,8 +98,8 @@ namespace ContaCafe
                 trabajadorParse.updateTrabajador(trabajador);
                 nuevo = false;
             }
-            rootFrame.Navigate(typeof(ListaTrabajadorPage), idTraNov);
-
+            // rootFrame.Navigate(typeof(ListaTrabajadorPage), idTraNov);
+            rootFrame.GoBack();
 
         }
     }

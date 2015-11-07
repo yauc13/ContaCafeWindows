@@ -114,8 +114,9 @@ namespace ContaCafe
         {
             if (ok == 1)
             {
-                ok = 0;
-                rootFrame.Navigate(typeof(AgregarTrabajadorPage), listTrabajador.ElementAt(listaTrabajador.SelectedIndex));
+            //    ok = 0;
+              //  rootFrame.Navigate(typeof(AgregarTrabajadorPage), listTrabajador.ElementAt(listaTrabajador.SelectedIndex));
+                
 
                 //listaInsumo.SelectedIndex es el nombre del Lisbox del xaml;
             }
@@ -127,7 +128,16 @@ namespace ContaCafe
 
         private void editTrabajador(object sender, RoutedEventArgs e)
         {
-            ok = 1;
+            //  ok = 1;
+            int lis;
+            lis = listaTrabajador.SelectedIndex;
+            if (lis > -1)
+            {
+
+                rootFrame.Navigate(typeof(AgregarTrabajadorPage), listTrabajador.ElementAt(listaTrabajador.SelectedIndex));
+ 
+            }
+           
         }
 
         private void addTrabajador(object sender, RoutedEventArgs e)
